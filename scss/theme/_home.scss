@@ -89,7 +89,7 @@ body {
 //--------- Start Banner Area -----------//
 
 	.main-wrapper-first{
-		background:#f66483;
+		background:#F9CF61;
 	}
 
 	.banner-content{
@@ -114,7 +114,7 @@ body {
 	}
 
 	.banner-area{
-		background:#f66483
+		background:#F9CF61;
 	}
 
 
@@ -433,10 +433,9 @@ body {
 //----------- Footer Area ------------//
 
 .footer-area{
-	background:url(../img/f-bg.jpg);
 	background-size:cover;
 	color:$white;
-	margin-bottom:90px;
+	padding:20px;
 	i{
 		color:$white;
 		@include transition;
@@ -452,7 +451,6 @@ body {
 	}
 	
 	.footer-social{
-		margin-top:30px;
 		a{
 			padding:15px;
 		}
