@@ -1,6 +1,4 @@
-//
-// Base styles
-//
+
 
 .card {
   position: relative;
@@ -15,8 +13,7 @@
 }
 
 .card-body {
-  // Enable `flex-grow: 1` for decks and groups so that card blocks take up
-  // as much space as possible, ensuring footers are aligned to the bottom.
+
   flex: 1 1 auto;
   padding: $card-spacer-x;
 }
@@ -59,13 +56,10 @@
 }
 
 
-//
-// Optional textual caps
-//
 
 .card-header {
   padding: $card-spacer-y $card-spacer-x;
-  margin-bottom: 0; // Removes the default margin-bottom of <hN>
+  margin-bottom: 0; 
   background-color: $card-cap-bg;
   border-bottom: $card-border-width solid $card-border-color;
 
@@ -85,9 +79,6 @@
 }
 
 
-//
-// Header navs
-//
 
 .card-header-tabs {
   margin-right: -($card-spacer-x / 2);
@@ -101,7 +92,6 @@
   margin-left: -($card-spacer-x / 2);
 }
 
-// Card image
 .card-img-overlay {
   position: absolute;
   top: 0;
@@ -112,23 +102,21 @@
 }
 
 .card-img {
-  width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
+  width: 100%; 
   @include border-radius($card-inner-border-radius);
 }
 
-// Card image caps
 .card-img-top {
-  width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
+  width: 100%; 
   @include border-top-radius($card-inner-border-radius);
 }
 
 .card-img-bottom {
-  width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
+  width: 100%; 
   @include border-bottom-radius($card-inner-border-radius);
 }
 
 
-// Card deck
 
 @include media-breakpoint-up(sm) {
   .card-deck {
@@ -148,9 +136,6 @@
 }
 
 
-//
-// Card groups
-//
 
 @include media-breakpoint-up(sm) {
   .card-group {
@@ -165,7 +150,6 @@
         border-left: 0;
       }
 
-      // Handle rounded corners
       @if $enable-rounded {
         &:first-child {
           @include border-right-radius(0);
@@ -202,10 +186,6 @@
 }
 
 
-//
-// Columns
-//
-
 .card-columns {
   .card {
     margin-bottom: $card-columns-margin;
@@ -216,8 +196,8 @@
     column-gap: $card-columns-gap;
 
     .card {
-      display: inline-block; // Don't let them vertically span multiple columns
-      width: 100%; // Don't let their width change
+      display: inline-block;
+      width: 100%; 
     }
   }
 }

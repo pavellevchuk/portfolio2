@@ -1,12 +1,9 @@
-//
-// Basic Bootstrap table
-//
 
 .table {
   width: 100%;
   max-width: 100%;
   margin-bottom: $spacer;
-  background-color: $table-bg; // Reset for nesting within parents with `background-color`.
+  background-color: $table-bg; 
 
   th,
   td {
@@ -30,9 +27,7 @@
 }
 
 
-//
-// Condensed table w/ half padding
-//
+
 
 .table-sm {
   th,
@@ -42,9 +37,6 @@
 }
 
 
-// Bordered version
-//
-// Add borders all around the table and between all the columns.
 
 .table-bordered {
   border: $table-border-width solid $table-border-color;
@@ -63,9 +55,6 @@
 }
 
 
-// Zebra-striping
-//
-// Default zebra-stripe styles (alternating gray and transparent backgrounds)
 
 .table-striped {
   tbody tr:nth-of-type(odd) {
@@ -74,9 +63,6 @@
 }
 
 
-// Hover effect
-//
-// Placed here since it has to come after the potential zebra striping
 
 .table-hover {
   tbody tr {
@@ -87,10 +73,6 @@
 }
 
 
-// Table backgrounds
-//
-// Exact selectors below required to override `.table-striped` and prevent
-// inheritance to nested tables.
 
 @each $color, $value in $theme-colors {
   @include table-row-variant($color, theme-color-level($color, -9));
@@ -98,10 +80,6 @@
 
 @include table-row-variant(active, $table-active-bg);
 
-
-// Inverse styles
-//
-// Same table markup, but inverted color scheme: dark background and light text.
 
 .thead-inverse {
   th {
@@ -147,20 +125,12 @@
 }
 
 
-// Responsive tables
-//
-// Add `.table-responsive` to `.table`s and we'll make them mobile friendly by
-// enabling horizontal scrolling. Only applies <768px. Everything above that
-// will display normally.
-
 .table-responsive {
   @include media-breakpoint-down(md) {
     display: block;
     width: 100%;
     overflow-x: auto;
-    -ms-overflow-style: -ms-autohiding-scrollbar; // See https://github.com/twbs/bootstrap/pull/10057
-
-    // Prevent double border on horizontal scroll due to use of `display: block;`
+    -ms-overflow-style: -ms-autohiding-scrollbar; 
     &.table-bordered {
       border: 0;
     }

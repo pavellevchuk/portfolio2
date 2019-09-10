@@ -1,13 +1,4 @@
-// scss-lint:disable PropertyCount, VendorPrefix
 
-// Embedded icons from Open Iconic.
-// Released under MIT and copyright 2014 Waybury.
-// https://useiconic.com/open
-
-
-// Checkboxes and radios
-//
-// Base class takes care of all the key behavioral aspects.
 
 .custom-control {
   position: relative;
@@ -19,7 +10,7 @@
 
 .custom-control-input {
   position: absolute;
-  z-index: -1; // Put the input behind the label so it doesn't overlay text
+  z-index: -1; 
   opacity: 0;
 
   &:checked ~ .custom-control-indicator {
@@ -29,7 +20,6 @@
   }
 
   &:focus ~ .custom-control-indicator {
-    // the mixin is not used here to make sure there is feedback
     box-shadow: $custom-control-indicator-focus-box-shadow;
   }
 
@@ -50,9 +40,7 @@
   }
 }
 
-// Custom indicator
-//
-// Generates a shadow element to create our makeshift checkbox/radio background.
+
 
 .custom-control-indicator {
   position: absolute;
@@ -70,9 +58,7 @@
   @include box-shadow($custom-control-indicator-box-shadow);
 }
 
-// Checkboxes
-//
-// Tweak just a few things for checkboxes.
+
 
 .custom-checkbox {
   .custom-control-indicator {
@@ -90,9 +76,7 @@
   }
 }
 
-// Radios
-//
-// Tweak just a few things for radios.
+
 
 .custom-radio {
   .custom-control-indicator {
@@ -105,10 +89,6 @@
 }
 
 
-// Layout options
-//
-// By default radios and checkboxes are `inline-block` with no additional spacing
-// set. Use these optional classes to tweak the layout.
 
 .custom-controls-stacked {
   display: flex;
@@ -124,11 +104,7 @@
 }
 
 
-// Select
-//
-// Replaces the browser default select with a custom one, mostly pulled from
-// http://primercss.io.
-//
+
 
 .custom-select {
   display: inline-block;
@@ -154,11 +130,7 @@
     @include box-shadow($custom-select-focus-box-shadow);
 
     &::-ms-value {
-      // For visual consistency with other platforms/browsers,
-      // supress the default white text on blue background highlight given to
-      // the selected option text when the (still closed) <select> receives focus
-      // in IE and (under certain conditions) Edge.
-      // See https://github.com/twbs/bootstrap/issues/19398.
+
       color: $input-color;
       background-color: $input-bg;
     }
@@ -169,7 +141,6 @@
     background-color: $custom-select-disabled-bg;
   }
 
-  // Hides the default caret in IE11
   &::-ms-expand {
     opacity: 0;
   }
@@ -183,9 +154,7 @@
 }
 
 
-// File
-//
-// Custom file input.
+
 
 .custom-file {
   position: relative;

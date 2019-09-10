@@ -86,7 +86,6 @@ body {
 	color:$text-color-black;
 }
 
-//--------- Start Banner Area -----------//
 
 	.main-wrapper-first{
 		background:#F9CF61;
@@ -120,8 +119,6 @@ body {
 
 
 
-//--------- End Banner Area -----------//
-//----------- Start Feature Area ------------//
 
 .featured-area{
 	background-color:$white;
@@ -185,10 +182,6 @@ body {
 }
 
 
-.special-offer-area{
-	
-}
-
 .offer-left,.offer-right{
 	min-height:495px;
 	display: flex;
@@ -207,13 +200,6 @@ body {
     font-size: 25px !important;
   }
 }
-
-
-
-//----------- End Feature Area ------------//
-
-
-//----------- Special Offer Area ------------//
 
 
 .special-offer-area{
@@ -236,11 +222,6 @@ body {
 }
 
 
-//----------- End Special Offer Area ------------//
-
-
-//----------- Gallery  Area ------------//
-
 .image-gallery-area{
 	background:$white;
 }
@@ -250,11 +231,6 @@ body {
 	margin-right:0;
 
 }
-
-//----------- End Gallery Area ------------//
-
-
-//----------- Process Area ------------//
 
 .process-area{
 	background-color:$offwhite;
@@ -303,14 +279,6 @@ body {
 	}
 }
 
-
-
-//----------- End Process Area ------------//
-
-
-//----------- About Area ------------//
-
-
 .about-area{
 	position:relative;
 	background:$white;
@@ -341,11 +309,6 @@ body {
 		}
 	}
 }
-
-//----------- End About Area ------------//
-
-
-//----------- Newsletter Area ------------//
 
 .newsletter-area{
 	background-color:$primary-color;
@@ -427,11 +390,6 @@ body {
   }
 }
 
-//----------- End Newsletter Area ------------//
-
-
-//----------- Footer Area ------------//
-
 .footer-area{
 	background-size:cover;
 	color:$white;
@@ -459,13 +417,6 @@ body {
 }
 
 
-
-
-
-//----------- End Footer Area ------------//
-
-//----------- Start Generic Page -------------//
-
 .beginning-area{
 	background-color:$white;
 }
@@ -477,11 +428,3 @@ body {
 .about-generic-area{
 	background-color:$white;
 }
-
-
-
-//----------- End Generic Page -------------//
-
-
-
-

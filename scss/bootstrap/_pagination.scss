@@ -1,8 +1,7 @@
 .pagination {
   display: flex;
-  // 1-2: Disable browser default list styles
-  padding-left: 0; // 1
-  list-style: none; // 2
+  padding-left: 0;
+  list-style: none; 
   @include border-radius();
 }
 
@@ -53,9 +52,7 @@
 }
 
 
-//
-// Sizing
-//
+
 
 .pagination-lg {
   @include pagination-size($pagination-padding-y-lg, $pagination-padding-x-lg, $font-size-lg, $line-height-lg, $border-radius-lg);
